@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts\Raleway\static\Raleway-Regular.ttf");
+}
+
+body {
+  font-family: "Raleway", Arial, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: cornsilk;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header a {
+}
+
+.nav {
+}
