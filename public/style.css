@@ -10,23 +10,56 @@ body {
 }
 
 header {
-  background-color: cornsilk;
   display: flex;
+  flex-direction: row;
+  justify-items: fle;
   width: 100%;
   justify-content: space-between;
-  height: 50px;
+  height: 3.5em;
+
 }
 
-header nav
+.logo_main
 {
-  width: 45%;
-  background-color: cornflowerblue;
+  align-self: flex-end;
 }
 
 .nav_header
 {
+  width: 50%;
   display: flex;
   font-size: small;
   list-style: none;
   justify-content: space-around;
+  margin-block: unset;
+  margin-inline: unset;
+  padding-inline: unset;
+  align-items: flex-start;
+  height: 90%;
+}
+
+.nav_header a
+{
+  text-decoration: none;
+  font-weight: 600;
+  color:#8d8d8d
+}
+
+.li_1 a, .li_3 a
+{
+  color: #0065FC;
+}
+.li_3 a
+{
+  font-weight: bolder;
+}
+.li_1
+{
+  border-top: 0.15em solid #0065FC;
+  padding-top: 1.10em;
+}
+
+.li_2,.li_3
+{
+  padding-top: 1.25em;
 }
