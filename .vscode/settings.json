@@ -1,7 +1,9 @@
 {
-  "prettier.useEditorConfig": false,
-  "prettier.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "prettier.printWidth": 200
 }
