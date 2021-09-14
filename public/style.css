@@ -7,6 +7,7 @@ body {
   font-family: "Raleway", Arial, serif;
   display: flex;
   flex-direction: column;
+  margin: 1em;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
   width: 100%;
   justify-content: space-between;
   height: 5%;
+  margin-bottom: 1em;
 }
 
 .logo_main {
@@ -70,6 +72,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: rgba(165, 42, 42, 0.459);
+  margin-bottom: 1em;
 }
 
 .recherche {
@@ -82,27 +85,43 @@ h2 {
   font-size: 1.2em;
 }
 
-.titre1 p {
-  margin-top: 0;
-  padding-top: 0;
-  font-size: 0.9em;
+.titre1 h1 {
+  margin-bottom: 0;
+  padding-bottom: 0em;
 }
-
-.recherche {
+.titre1 p {
+  font-size: 0.9em;
+  margin-top: 0.8em;
+}
+.titre1 .recherche {
   display: flex;
   flex-direction: column;
 }
 
-.recherche p {
-  margin-block-start: unset;
-  margin-block-end: unset;
-  margin-inline-start: unset;
-  margin-inline-end: unset;
+.recherche form p {
+  margin-block: unset;
+  margin-inline: unset;
   width: fit-content;
-  height: 2em;
+  border: transparent solid 1px;
   display: flex;
+  border-radius: 10px;
 }
 
 .recherche form label {
-  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #0065fc;
+  color: white;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+input[type="text"] {
+  border: none;
 }
