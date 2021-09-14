@@ -37,7 +37,7 @@ header {
 .nav_header a {
   text-decoration: none;
   font-weight: 600;
-  color: #8d8d8d;
+  color: #a5a5a5;
 }
 
 .li_1 a,
@@ -84,5 +84,25 @@ h2 {
 
 .titre1 p {
   margin-top: 0;
+  padding-top: 0;
   font-size: 0.9em;
+}
+
+.recherche {
+  display: flex;
+  flex-direction: column;
+}
+
+.recherche p {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  width: fit-content;
+  height: 2em;
+  display: flex;
+}
+
+.recherche form label {
+  padding: 7px;
 }
