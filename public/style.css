@@ -15,7 +15,7 @@ header {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  height: 5%;
+  height: 8%;
   margin-bottom: 1em;
 }
 
@@ -34,44 +34,38 @@ header {
   padding-inline: unset;
   align-items: flex-start;
   height: 90%;
+  margin-top: 1em;
 }
 
 .nav_header a {
   text-decoration: none;
   font-weight: 600;
+  color: #0065fc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.nav_header a:hover {
   color: black;
+  border-top: 0.15em solid #0065fc;
+  padding-top: 1.15em;
 }
 
-.li_1 a,
-.li_3 a {
-  color: #0065fc;
-}
 .li_3 a {
   font-weight: bolder;
-}
-.li_2 {
-  border-top: 0.15em solid #0065fc;
-  padding-top: 1.1em;
-}
-
-.li_1,
-.li_3 {
-  padding-top: 1.25em;
 }
 
 .section1 {
   height: 15%;
   width: 100%;
-  background-color: rgba(137, 43, 226, 0.267);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .titre1 {
   display: flex;
   flex-direction: column;
-  background-color: rgba(165, 42, 42, 0.459);
   margin-bottom: 1em;
 }
 
@@ -103,7 +97,7 @@ h2 {
   margin-inline: unset;
   width: fit-content;
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .recherche form label {
@@ -123,6 +117,7 @@ input[type="submit"] {
   color: white;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -130,6 +125,7 @@ input[type="text"] {
   border-top: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
+  font-weight: 600;
 }
 
 .filtres {
@@ -138,31 +134,72 @@ input[type="text"] {
 }
 
 .filtres a {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
   display: flex;
   height: fit-content;
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
-  border: 3px #f2f2f2 solid;
+  border: 2px #f2f2f2 solid;
   border-radius: 2em;
+  height: 1.9em;
+  font-size: 0.9em;
 }
 
+.filtres a:hover > i {
+  color: white;
+  background-color: #0065fc;
+}
+.filtres a:hover > div {
+  color: #0065fc;
+}
+.filtres a:hover {
+  background-color: #deebff;
+  border: #0065fc solid 2px;
+  font-size: 0.88em;
+  margin-right: 1.22em;
+}
 .filtres a i {
   color: #0065fc;
   background-color: #deebff;
-  border: #deebff solid 2px;
   border-radius: 2em;
-  width: 2em;
-  height: 2em;
+  width: 2.2em;
+  height: 2.2em;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: -0.2em;
 }
 
 .filtres a div {
   color: black;
   font-weight: 550;
   padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.filtres h3 {
+  margin-right: 2em;
+  font-size: 0.9em;
+}
+
+.nblogements {
+  font-size: 0.9em;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.nblogements i {
+  margin-right: 1em;
+  font-size: 0.7em;
+  border: #f2f2f2 solid 1px;
+  border-radius: 2em;
+  width: 1.6em;
+  height: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
 }
