@@ -10,6 +10,7 @@ body {
   margin: 1em;
 }
 
+/*HEADER*/
 header {
   display: flex;
   flex-direction: row;
@@ -54,13 +55,15 @@ header {
   font-weight: bolder;
 }
 
+/*--------------SECTION 1--------------*/
+
 .section1 {
   height: 15%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .titre1 {
@@ -76,8 +79,11 @@ header {
 
 h1,
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 750;
 }
+
+/*titre 1*/
 
 .titre1 h1 {
   margin-bottom: 0;
@@ -92,32 +98,29 @@ h2 {
   flex-direction: column;
 }
 
+/*formulaire de recherche*/
+
 .recherche form p {
   margin-block: unset;
   margin-inline: unset;
   width: fit-content;
   display: flex;
   margin-bottom: 1em;
+  font-size: 0.9em;
+  height: 2.5em;
 }
 
 .recherche form label {
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
   background-color: #f2f2f2;
   border: 1px #f2f2f2 solid;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
-}
-
-input[type="submit"] {
-  border: none;
-  background-color: #0065fc;
-  color: white;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: none;
 }
 
 input[type="text"] {
@@ -128,14 +131,27 @@ input[type="text"] {
   font-weight: 600;
 }
 
+input[type="submit"] {
+  border: none;
+  background-color: #0065fc;
+  color: white;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  cursor: pointer;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+/*filtres de recherche*/
+
 .filtres {
   display: flex;
   align-items: center;
 }
 
 .filtres a {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
   display: flex;
   height: fit-content;
   justify-content: space-between;
@@ -180,13 +196,16 @@ input[type="text"] {
 }
 
 .filtres h3 {
-  margin-right: 2em;
+  margin-right: 1em;
   font-size: 0.9em;
+  font-weight: 750;
 }
+
+/*info logements disponibles*/
 
 .nblogements {
   font-size: 0.9em;
-  margin-top: 1.5em;
+  margin-top: 1.8em;
   display: flex;
   align-items: center;
 }
@@ -203,3 +222,97 @@ input[type="text"] {
   align-items: center;
   color: #0065fc;
 }
+
+/*--------------SECTION 2--------------*/
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  margin-left: 1em;
+}
+
+.section2 h2 {
+  margin-bottom: 0.2em;
+  margin-left: 1em;
+}
+
+.logements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.3em;
+}
+
+.logements a {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  font-size: 0.5em;
+  text-decoration: none;
+  color: black;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  margin: 2em;
+  border: solid #f2f2f2 1px;
+  border-radius: 2em;
+  padding: 0.3em;
+  box-shadow: 1px 2px 20px rgb(199, 199, 199);
+}
+
+.logements a img {
+  object-fit: cover;
+  height: 9em;
+  margin-bottom: 1em;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.logements h3 {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.logements h3 + p {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  margin-bottom: 0.5em;
+  padding-left: 0.6em;
+  font-size: 1.2em;
+}
+
+.etoiles {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  display: flex;
+  color: #0065fc;
+  margin-bottom: 0.8em;
+  padding-left: 0.5em;
+  font-size: 1.4em;
+}
+
+.fas.fa-star.gris {
+  color: #f2f2f2;
+}
+
+.afficherplus {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  margin-left: 1.4em;
+  font-weight: 700;
+}
+
+/*--------------ASIDE--------------*/
