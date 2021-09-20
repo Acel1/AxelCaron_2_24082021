@@ -7,69 +7,72 @@ body {
   font-family: "Raleway", Arial, serif;
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  min-height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 /*HEADER*/
 header {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
-  height: 8%;
-  margin-bottom: 1em;
-}
-
-.logo_main {
-  align-self: flex-end;
+  align-items: flex-end;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 .nav_header {
   width: 35%;
   display: flex;
-  font-size: 0.9em;
+  font-size: 1em;
   list-style: none;
   justify-content: space-around;
   margin-block: unset;
   margin-inline: unset;
   padding-inline: unset;
-  align-items: flex-start;
-  height: 90%;
-  margin-top: 1em;
+  margin-bottom: 1%;
+  align-items: flex-end;
 }
 
-.nav_header a {
+.li_1 a,
+.li_2 a {
   text-decoration: none;
   font-weight: 600;
-  color: #0065fc;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.nav_header a:hover {
   color: black;
+}
+.li_1 a:hover,
+.li_2 a:hover {
+  color: #0065fc;
   border-top: 0.15em solid #0065fc;
   padding-top: 1.15em;
 }
 
-.li_3 a {
-  font-weight: bolder;
+.sinscrire a {
+  color: #0065fc;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 /*--------------SECTION 1--------------*/
 
 .section1 {
   height: 15%;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 4em;
+  margin-bottom: 3%;
 }
 
 .titre1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 1%;
 }
 
 .recherche {
@@ -79,19 +82,25 @@ header {
 
 h1,
 h2 {
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 750;
+  margin-block: unset;
+  margin-inline: unset;
 }
 
 /*titre 1*/
 
 .titre1 h1 {
-  margin-bottom: 0;
-  padding-bottom: 0em;
+  margin-bottom: 0.4%;
+  padding-bottom: 0%;
 }
 .titre1 p {
   font-size: 0.9em;
-  margin-top: 0.8em;
+  margin-top: 1%;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
 }
 .titre1 .recherche {
   display: flex;
@@ -105,14 +114,14 @@ h2 {
   margin-inline: unset;
   width: fit-content;
   display: flex;
-  margin-bottom: 1em;
-  font-size: 0.9em;
+  margin-bottom: 1%;
+  font-size: 105%;
   height: 2.5em;
 }
 
 .recherche form label {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #f2f2f2;
   border: 1px #f2f2f2 solid;
   border-top-left-radius: 1em;
@@ -121,6 +130,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border-right: none;
+  font-size: 95%;
 }
 
 input[type="text"] {
@@ -129,6 +139,9 @@ input[type="text"] {
   border-left: none;
   border-right: none;
   font-weight: 600;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 input[type="submit"] {
@@ -138,8 +151,9 @@ input[type="submit"] {
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   cursor: pointer;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 100%;
 }
 
 /*filtres de recherche*/
@@ -147,20 +161,24 @@ input[type="submit"] {
 .filtres {
   display: flex;
   align-items: center;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
 }
 
 .filtres a {
-  margin-left: 0.6em;
-  margin-right: 0.6em;
+  margin-left: 2%;
+  margin-right: 2%;
   display: flex;
-  height: fit-content;
+  /* height: fit-content; */
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
   border: 2px #f2f2f2 solid;
   border-radius: 2em;
-  height: 1.9em;
-  font-size: 0.9em;
+  height: 100%;
+  font-size: 100%;
 }
 
 .filtres a:hover > i {
@@ -173,8 +191,6 @@ input[type="submit"] {
 .filtres a:hover {
   background-color: #deebff;
   border: #0065fc solid 2px;
-  font-size: 0.88em;
-  margin-right: 1.22em;
 }
 .filtres a i {
   color: #0065fc;
@@ -185,7 +201,7 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -0.2em;
+  margin: -0.5%;
 }
 
 .filtres a div {
@@ -196,8 +212,8 @@ input[type="submit"] {
 }
 
 .filtres h3 {
-  margin-right: 1em;
-  font-size: 0.9em;
+  margin-right: 0%;
+  font-size: 1.1em;
   font-weight: 750;
 }
 
@@ -230,24 +246,29 @@ input[type="submit"] {
   flex-direction: column;
   justify-content: flex-start;
   width: 60%;
-  margin-left: 1em;
+  margin-left: 2.5%;
 }
 
 .section2 h2 {
-  margin-bottom: 0.2em;
-  margin-left: 1em;
+  margin-bottom: 2%;
 }
 
 .logements {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.3em;
+  margin-bottom: 4%;
+  justify-content: space-around;
+  width: 90%;
+  font-size: 125%;
 }
-
 .logements a {
+  text-decoration: none;
+  width: 25%;
+  margin: 2%;
+}
+.logements a div {
   display: flex;
   flex-direction: column;
-  width: 22em;
   font-size: 0.5em;
   text-decoration: none;
   color: black;
@@ -255,16 +276,14 @@ input[type="submit"] {
   margin-block-end: unset;
   margin-inline-start: unset;
   margin-inline-end: unset;
-  margin: 2em;
-  border: solid #f2f2f2 1px;
+  border: solid #f2f2f2 2px;
   border-radius: 2em;
-  padding: 0.3em;
   box-shadow: 1px 2px 20px rgb(199, 199, 199);
 }
 
 .logements a img {
   object-fit: cover;
-  height: 9em;
+  height: 10em;
   margin-bottom: 1em;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
@@ -289,6 +308,7 @@ input[type="submit"] {
   margin-bottom: 0.5em;
   padding-left: 0.6em;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .etoiles {
@@ -301,6 +321,7 @@ input[type="submit"] {
   margin-bottom: 0.8em;
   padding-left: 0.5em;
   font-size: 1.4em;
+  text-decoration: none;
 }
 
 .fas.fa-star.gris {
