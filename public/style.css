@@ -337,4 +337,63 @@ input[type="submit"] {
   margin-left: 3%;
 }
 
-/*--------------ASIDE--------------*/
+/*-------------------------------------
+----------------ASIDE------------------
+--------------------------------------*/
+
+#MostPopular {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  display: flex;
+  align-items: center;
+  margin: 1% 0 1% 0;
+  width: 100%;
+  border: solid #f2f2f2 2.5px;
+  border-radius: 2em;
+  box-shadow: 1px 2px 20px rgb(199, 199, 199);
+  padding: 0.5%;
+}
+
+.card2_img {
+  object-fit: cover;
+  width: 30%;
+  height: 150px;
+  border-radius: 2em 0 0 2em;
+  margin-right: 5%;
+}
+
+.card2_container {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.card2_container_h3_1,
+.card2_container_h3_3 {
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+
+.card2_container_h3_2 {
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+.card2_container + p {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline: unset;
+}
+
+.card2_etoiles {
+  margin-top: 20%;
+}
