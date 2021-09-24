@@ -79,13 +79,14 @@ body {
 -----------------------------SECTION 1------------------------
 ------------------------------------------------------------*/
 
-.section1 {
+#section1 {
   height: 15%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 4%;
+  margin-left: 1%;
 }
 
 .titre1 {
@@ -101,7 +102,7 @@ body {
 
 h1,
 h2 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 750;
   margin-block: unset;
   margin-inline: unset;
@@ -112,9 +113,10 @@ h2 {
 .titre1 h1 {
   margin-bottom: 0.4%;
   padding-bottom: 0%;
+  margin-left: -0.2%;
 }
 .titre1 p {
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin-top: 1%;
   margin-block-start: unset;
   margin-block-end: unset;
@@ -218,6 +220,7 @@ input[type="submit"] {
 
 .search_filter_name {
   color: black;
+  font-size: 1.2em;
   font-weight: 550;
   margin-block: unset;
   margin-inline: unset;
@@ -225,7 +228,7 @@ input[type="submit"] {
 }
 .filters h3 {
   margin-right: 1%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 750;
 }
 
@@ -255,7 +258,7 @@ input[type="submit"] {
 ------------------------SECTION 2-----------------------------
 ------------------------------------------------------------*/
 
-.section2 {
+#section2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -419,4 +422,99 @@ input[type="submit"] {
 .card2_etoiles {
   margin-top: 20%;
   color: #0065fc;
+}
+
+/*------------------------------------------------------------
+------------------------Section 3-----------------------------
+------------------------------------------------------------*/
+
+#section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#title_actvities {
+  margin-left: 1%;
+}
+
+.activities {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2% 0 2% 0;
+}
+
+.activities1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 1%;
+}
+
+.activities2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 1%;
+}
+
+.activities1 a,
+.activities2 a {
+  text-decoration: none;
+}
+
+.activity_big {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.activities_SetM {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.activity_medium_container,
+.activity_small_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  box-shadow: 1px 2px 20px rgb(205, 205, 205);
+}
+
+.activity_big_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  box-shadow: 1px 2px 20px rgb(205, 205, 205);
+}
+
+.activity_small_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 2em 2em 0 0;
+}
+
+.activity_medium_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 2em 2em 0 0;
+  padding: -1%;
+}
+
+.activity_big_container img {
+  object-fit: cover;
+  height: 500px;
+  border-radius: 2em 2em 0 0;
+}
+
+.activities h3 {
+  color: black;
+  font-weight: 750;
+  margin-left: 7%;
+  font-size: 1.2em;
 }
