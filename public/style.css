@@ -7,15 +7,20 @@ body {
   font-family: "Raleway", Arial, serif;
   display: flex;
   flex-direction: column;
+  width: 95%;
+  margin: auto;
 }
 
-/*HEADER*/
-header {
+/*------------------------------------------------------------
+-------------------------HEADER-------------------------------
+------------------------------------------------------------*/
+
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -27,7 +32,7 @@ header {
   display: flex;
   font-size: 1em;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-block: unset;
   margin-inline: unset;
   padding-inline: unset;
@@ -38,7 +43,8 @@ header {
 .li_1,
 .li_2,
 .sinscrire {
-  width: 100%;
+  width: 30%;
+  text-align: center;
 }
 .li_1 a,
 .li_2 a {
@@ -51,7 +57,7 @@ header {
 .li_2 a:hover {
   color: #0065fc;
   border-top: 0.15em solid #0065fc;
-  padding-top: 29%;
+  padding-top: 28%;
 }
 
 .sinscrire a {
@@ -60,12 +66,22 @@ header {
   text-decoration: none;
 }
 
-/*--------------SECTION 1--------------*/
+/*------------------------------------------------------------
+-----------------------------MAIN-----------------------------
+------------------------------------------------------------*/
+
+#sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*------------------------------------------------------------
+-----------------------------SECTION 1------------------------
+------------------------------------------------------------*/
 
 .section1 {
   height: 15%;
-  width: 90%;
-  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,7 +107,7 @@ h2 {
   margin-inline: unset;
 }
 
-/*titre 1*/
+/*-----------titre 1----------*/
 
 .titre1 h1 {
   margin-bottom: 0.4%;
@@ -110,7 +126,7 @@ h2 {
   flex-direction: column;
 }
 
-/*formulaire de recherche*/
+/*-------formulaire de recherche-------*/
 
 .recherche form p {
   margin-block: unset;
@@ -159,7 +175,7 @@ input[type="submit"] {
   font-size: 100%;
 }
 
-/*filtres de recherche*/
+/*-------filtres de recherche-------*/
 
 .filters {
   display: flex;
@@ -213,7 +229,7 @@ input[type="submit"] {
   font-weight: 750;
 }
 
-/*info logements disponibles*/
+/*-----info logements disponibles-----*/
 
 .nblogements {
   font-size: 1em;
@@ -235,57 +251,54 @@ input[type="submit"] {
   color: #0065fc;
 }
 
-/*--------------SECTION 2--------------*/
+/*------------------------------------------------------------
+------------------------SECTION 2-----------------------------
+------------------------------------------------------------*/
 
 .section2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 60%;
-  margin-left: 5%;
   background: #f2f2f2;
-  padding: 1%;
+  padding: 3%;
   border-radius: 2rem;
-}
-
-.section2 h2 {
-  margin-bottom: 0.5%;
-  margin-left: 2.5%;
+  margin: 0 1.5% 4% 0;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-bottom: 5%;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .card_a {
   text-decoration: none;
-  margin: 2%;
-  width: 28%;
+  margin: 2% 0 2% 0;
+  width: 30%;
 }
 
 .card {
   color: black;
   border: solid #f2f2f2 2.5px;
   border-radius: 2em;
-  box-shadow: 1px 2px 20px rgb(199, 199, 199);
+  box-shadow: 1px 2px 20px rgb(175, 175, 175);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .card_img {
-  padding-bottom: 1%;
-  padding: 0 0.2% 0 0.2%;
+  margin-bottom: 2%;
 }
 
 .card_img img {
   border-radius: 2em 2em 0 0;
   object-fit: cover;
-  height: 100px;
+  height: 150px;
   width: 100%;
 }
 
@@ -298,7 +311,7 @@ input[type="submit"] {
   margin-block-end: unset;
   margin-inline-start: unset;
   margin-inline-end: unset;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   font-size: 1.2em;
   font-weight: 750;
 }
@@ -310,7 +323,6 @@ input[type="submit"] {
   margin-inline-end: unset;
   margin-bottom: 4%;
   font-size: 1em;
-  text-decoration: none;
 }
 
 .etoiles {
@@ -318,11 +330,8 @@ input[type="submit"] {
   margin-block-end: unset;
   margin-inline-start: unset;
   margin-inline-end: unset;
-  display: flex;
   color: #0065fc;
-  margin-bottom: 0%;
   font-size: 1em;
-  text-decoration: none;
 }
 
 .fas.fa-star.gris {
@@ -332,68 +341,82 @@ input[type="submit"] {
 .afficherplus {
   text-decoration: none;
   color: black;
-  font-size: 1em;
-  font-weight: 700;
-  margin-left: 3%;
+  font-size: 1.2em;
+  font-weight: 750;
 }
 
-/*-------------------------------------
-----------------ASIDE------------------
---------------------------------------*/
+/*------------------------------------------------------------
+------------------------ASIDE---------------------------------
+------------------------------------------------------------*/
 
 #MostPopular {
-  width: 25%;
   display: flex;
   flex-direction: column;
+  width: 25%;
+  margin: 0 0 4% 1.5%;
+  background-color: #f2f2f2;
+  padding: 3%;
+  padding-bottom: 0;
+  border-radius: 2rem;
+}
+
+.title_mostpopular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_mostpopular i {
+  font-size: 1.5em;
 }
 
 .cards2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 2.5%;
 }
 
+.cards2 a {
+  text-decoration: none;
+}
 .card2 {
   display: flex;
   align-items: center;
-  margin: 1% 0 1% 0;
-  width: 100%;
+  margin: 5% 0 5% 0;
   border: solid #f2f2f2 2.5px;
   border-radius: 2em;
-  box-shadow: 1px 2px 20px rgb(199, 199, 199);
-  padding: 0.5%;
+  box-shadow: 1px 2px 20px rgb(175, 175, 175);
 }
 
 .card2_img {
   object-fit: cover;
-  width: 30%;
-  height: 150px;
+  width: 35%;
+  height: 175px;
   border-radius: 2em 0 0 2em;
   margin-right: 5%;
 }
 
 .card2_container {
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
+  width: 50%;
 }
 
-.card2_container_h3_1,
-.card2_container_h3_3 {
+.card2_container_h3 {
   margin-block-start: unset;
   margin-block-end: unset;
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  font-weight: 750;
+  color: black;
 }
-
-.card2_container_h3_2 {
+.card2_container p {
   margin-block-start: unset;
   margin-block-end: unset;
-}
-.card2_container + p {
-  margin-block-start: unset;
-  margin-block-end: unset;
-  margin-inline: unset;
+  font-size: 1em;
+  color: black;
 }
 
 .card2_etoiles {
   margin-top: 20%;
+  color: #0065fc;
 }
