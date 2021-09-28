@@ -7,11 +7,14 @@ body {
   font-family: "Raleway", Arial, serif;
   display: flex;
   flex-direction: column;
-  width: 95%;
   height: 100%;
+  width: 100%;
   margin: auto;
 }
 
+#header,
+#sections {
+}
 /*------------------------------------------------------------
 -------------------------HEADER-------------------------------
 ------------------------------------------------------------*/
@@ -21,11 +24,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: 2%;
 }
 
 .nav_header {
@@ -86,8 +88,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 4%;
-  margin-left: 1%;
+  margin-bottom: 0%;
+  margin-left: 2%;
 }
 
 .titre1 {
@@ -265,9 +267,12 @@ input[type="submit"] {
   justify-content: flex-start;
   width: 60%;
   background: #f2f2f2;
-  padding: 3%;
+  padding: 2%;
   border-radius: 2rem;
-  margin: 0 1.5% 4% 0;
+  margin-top: 1.5%;
+  margin-right: 0;
+  margin-left: 2%;
+  margin-bottom: 4%;
 }
 
 .cards {
@@ -360,9 +365,12 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   width: 25%;
-  margin: 0 0 4% 1.5%;
+  margin-top: 1.5%;
+  margin-bottom: 4%;
+  margin-right: 0%;
+  margin-left: 2%;
   background-color: #f2f2f2;
-  padding: 3%;
+  padding: 2%;
   padding-bottom: 0;
   border-radius: 2rem;
 }
@@ -436,6 +444,8 @@ input[type="submit"] {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #title_actvities {
@@ -523,81 +533,49 @@ input[type="submit"] {
   font-size: 1.2em;
 }
 
-/*------------------------------------------------------------
+/*-----------------------------------------------------------
 ------------------------FOOTER-------------------------------
 ------------------------------------------------------------*/
 
 #footer {
+  height: auto;
+  width: 100%;
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-right: -2.65%;
-  margin-left: -2.5%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-right: 30%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  padding-left: 4%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
-.footer_div1 {
+.footer_div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-right: 20%;
 }
 
-.footer_div1 h2 {
-  font-size: 1.4em;
+.footer_div h2 {
+  font-size: 1.3em;
   margin-block: unset;
   padding-inline: unset;
-  margin-bottom: 9.1%;
+  margin-bottom: 1.2rem;
 }
 
-.footer_div1 li {
-  margin-bottom: 4%;
-}
-
-.footer_div2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.footer_div2 h2 {
-  font-size: 1.4em;
-  margin-block: unset;
-  padding-inline: unset;
-  margin-bottom: 10%;
-}
-.footer_div2 li {
-  margin-bottom: 5.3%;
-}
-
-.footer_div3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.footer_div3 h2 {
-  font-size: 1.4em;
-  margin-bottom: 17%;
-  padding-inline: unset;
-}
-.footer_div3 li {
-  margin-bottom: 7.5%;
-}
-
-.footer_ul ul {
-  margin-block: unset;
-  padding-inline: unset;
-}
-
-#footer a {
+.footer_div a {
+  width: auto;
+  font-size: 1.2em;
+  margin-bottom: 0.8rem;
   text-decoration: none;
   list-style: none;
   color: black;
   font-weight: 500;
+}
+
+.footer_div a:hover {
+  color: #0065fc;
 }
