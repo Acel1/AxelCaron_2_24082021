@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Raleway";
-  src: url("fonts\Raleway\static\Raleway-Regular.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 }
 
 body {
@@ -12,9 +12,6 @@ body {
   margin: auto;
 }
 
-/* #header,
-#sections {
-} */
 /*====================================================================
 ==================================HEADER==============================
 ====================================================================*/
@@ -24,42 +21,35 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
-  padding-bottom: 2%;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 2%;
 }
 #logo-main {
   margin-top: 2%;
-  margin-left: 2%;
-}
-.header-right-corner {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 35%;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 60%;
+  width: 30%;
 }
 
 .nav a {
-  color: black;
   text-decoration: none;
   font-weight: 700;
-  padding: 10% 2% 0 2%;
-  font-size: 1.2rem;
+  padding: 11% 5% 0 5%;
+  font-size: 1.1rem;
 }
-
+.nav-hebergements,
+.nav-activities {
+  color: black;
+}
 .sinscrire {
   text-decoration: none;
   color: #0065fc;
   font-weight: 700;
-  width: 20%;
-  margin-left: 7%;
-  font-size: 1.2rem;
 }
 
 .nav-hebergements:hover,
@@ -75,6 +65,8 @@ body {
 #sections {
   display: flex;
   flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
 }
 
 /*========================================================
@@ -82,13 +74,9 @@ body {
 ========================================================*/
 
 #research {
-  height: 15%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0%;
-  margin-left: 2%;
+  width: 100%;
 }
 
 .research-title {
@@ -135,11 +123,10 @@ h2 {
 .search-bar form p {
   margin-block: unset;
   margin-inline: unset;
-  width: fit-content;
   display: flex;
   margin-bottom: 2%;
-  font-size: 105%;
-  height: 2.5em;
+  height: 3em;
+  width: 25%;
 }
 
 .search-bar form label {
@@ -153,7 +140,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border-right: none;
-  font-size: 95%;
+  font-size: 110%;
 }
 
 input[type="text"] {
@@ -162,7 +149,7 @@ input[type="text"] {
   border-left: none;
   border-right: none;
   font-weight: 600;
-  font-size: 100%;
+  font-size: 110%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -176,27 +163,40 @@ input[type="submit"] {
   cursor: pointer;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 100%;
+  font-size: 110%;
 }
 
 /*-------filtres de recherche-------*/
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 2%;
+  width: 75%;
 }
-
+.filters h3 {
+  font-size: 1.2em;
+  font-weight: 750;
+}
 .filter-container {
-  margin-left: 1%;
-  margin-right: 1%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: 3px #f2f2f2 solid;
   border-radius: 2em;
   cursor: pointer;
+  padding-right: 2%;
 }
-
+.search-filter-name {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 550;
+  margin-block: unset;
+  margin-inline: unset;
+  margin-right: -6%;
+}
 .filter-container:hover > .search-filter-icon {
   color: white;
   background-color: #4992ff;
@@ -208,32 +208,19 @@ input[type="submit"] {
   background-color: #deebff;
   border: #4992ff solid 3px;
 }
-.search-filter-icon {
-  color: #0065fc;
-  background-color: #deebff;
+.search-filter-icon i {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
   width: 3rem;
   height: 3rem;
+}
+.search-filter-icon {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 100%;
   margin: -3px;
 }
-
-.search-filter-name {
-  color: black;
-  font-size: 1.2em;
-  font-weight: 550;
-  margin-block: unset;
-  margin-inline: unset;
-  margin: 0 1rem 0 1rem;
-}
-.filters h3 {
-  margin-right: 1%;
-  font-size: 1.2em;
-  font-weight: 750;
-}
-
 /*-----info logements disponibles-----*/
 
 .nblogements {
@@ -262,7 +249,8 @@ input[type="submit"] {
 #hebergements {
   display: flex;
   justify-content: space-between;
-  margin: 2%;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 2%;
 }
 
 /*-----------------------------------------
@@ -273,7 +261,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 60%;
+  width: 65%;
   background: #f2f2f2;
   padding: 2%;
   border-radius: 2rem;
@@ -443,7 +431,6 @@ input[type="submit"] {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 2%;
 }
 
 #title_actvities {
@@ -601,4 +588,16 @@ input[type="submit"] {
 
 .footer-div a:hover {
   color: #0065fc;
+}
+
+/*=================================
+===================================
+===========RESPONSIVE==============
+===================================
+=================================*/
+
+@media screen and (max-width: 375px) {
+  .nav {
+    flex-wrap: wrap-reverse;
+  }
 }

@@ -6,19 +6,16 @@
     <title>Rerervia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="public/style.css" />
-
     <!--link rel='stylesheet' type='text/css' media='screen' href='main.css'-->
   </head>
 
   <body>
     <header id="header">
-      <a id="logo-main" href="index.html"><img src="public/images/logo/Reservia.svg" alt="logo du site" /></a>
-      <div class="header-right-corner">
+      <a id="logo-main" href="index.html"><img src="public/images/logo/Reservia.svg" alt="logo du site" /></a>    
         <nav class="nav">
           <a class="nav-hebergements" href="#hebergements">Hébergements</a>
           <a class="nav-activities" href="#activities">Activités</a>
-        </nav>
-        <a class="sinscrire" href="#">S'inscrire</a>
+          <a class="sinscrire" href="#">S'inscrire</a>
       </div>
     </header>
     <main id="sections">
@@ -32,7 +29,7 @@
           <form action="#" method="POST">
             <p>
               <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-              <input type="text" name="ville" id="ville" value="Marseille, France" maxlength="40" size="20" required />
+              <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="40" size="20" required />
               <input type="submit" value="Rechercher" />
             </p>
           </form>
