@@ -19,13 +19,14 @@ body {
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   width: 95%;
   margin: auto;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 #logo-main {
+  width: 70%;
   margin-top: 2%;
 }
 
@@ -33,25 +34,30 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 30%;
+  width: 20%;
 }
 
 .nav a {
   text-decoration: none;
   font-weight: 700;
   padding: 11% 5% 0 5%;
-  font-size: 1.1rem;
-}
-.nav-hebergements,
-.nav-activities {
+  font-size: 1.2rem;
   color: black;
 }
+
 .sinscrire {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 10%;
+}
+
+.sinscrire a {
   text-decoration: none;
   color: #0065fc;
   font-weight: 700;
+  font-size: 1.2rem;
 }
-
 .nav-hebergements:hover,
 .nav-activities:hover {
   color: #0065fc;
@@ -76,7 +82,7 @@ body {
 #research {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin-bottom: 2%;
 }
 
 .research-title {
@@ -119,19 +125,13 @@ h2 {
 }
 
 /*-------formulaire de recherche-------*/
-
-.search-bar form p {
+.search-bar form {
   margin-block: unset;
-  margin-inline: unset;
-  display: flex;
   margin-bottom: 2%;
-  height: 3em;
-  width: 25%;
+  display: flex;
 }
 
 .search-bar form label {
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: #f2f2f2;
   border: 1px #f2f2f2 solid;
   border-top-left-radius: 1em;
@@ -140,7 +140,8 @@ h2 {
   justify-content: center;
   align-items: center;
   border-right: none;
-  font-size: 110%;
+  font-size: 1.3rem;
+  padding: 2% 3%;
 }
 
 input[type="text"] {
@@ -149,9 +150,8 @@ input[type="text"] {
   border-left: none;
   border-right: none;
   font-weight: 600;
-  font-size: 110%;
-  padding-left: 5%;
-  padding-right: 5%;
+  font-size: 1.3rem;
+  padding: 2% 3%;
 }
 
 input[type="submit"] {
@@ -160,10 +160,9 @@ input[type="submit"] {
   color: white;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
+  font-size: 1.3rem;
+  padding: 2% 3%;
   cursor: pointer;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 110%;
 }
 
 /*-------filtres de recherche-------*/
@@ -171,13 +170,14 @@ input[type="submit"] {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 2%;
-  width: 75%;
+  margin-bottom: 1%;
+  width: 160%;
+  margin-left: -1%;
 }
 .filters h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 750;
 }
 .filter-container {
@@ -187,15 +187,15 @@ input[type="submit"] {
   border: 3px #f2f2f2 solid;
   border-radius: 2em;
   cursor: pointer;
-  padding-right: 2%;
+  padding-right: 3%;
 }
 .search-filter-name {
   color: black;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 550;
   margin-block: unset;
   margin-inline: unset;
-  margin-right: -6%;
+  margin-right: -8%;
 }
 .filter-container:hover > .search-filter-icon {
   color: white;
@@ -212,8 +212,9 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  font-size: 1.3em;
+  width: 3.3rem;
+  height: 3.3rem;
 }
 .search-filter-icon {
   color: #0065fc;
@@ -250,7 +251,7 @@ input[type="submit"] {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 
 /*-----------------------------------------
@@ -269,7 +270,6 @@ input[type="submit"] {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 1%;
   margin-bottom: 2%;
   justify-content: space-between;
@@ -431,6 +431,7 @@ input[type="submit"] {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4%;
 }
 
 #title_actvities {
@@ -570,10 +571,11 @@ input[type="submit"] {
 }
 
 .footer-div h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-block: unset;
   padding-inline: unset;
   margin-bottom: 1.2rem;
+  font-weight: 700;
 }
 
 .footer-div a {
@@ -597,7 +599,52 @@ input[type="submit"] {
 =================================*/
 
 @media screen and (max-width: 375px) {
-  .nav {
-    flex-wrap: wrap-reverse;
+  #header {
+    flex-wrap: wrap;
   }
+
+  #logo-main:nth-child(1) {
+    order: 1;
+  }
+  .nav:nth-child(2) {
+    order: 3;
+  }
+  .sinscrire:nth-child(3) {
+    order: 2;
+  }
+  .sinscrire {
+    width: 30%;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+
+  .search-bar form label,
+  input[type="text"],
+  input[type="submit"] {
+    font-size: 1rem;
+  }
+
+  .filters {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+.filters h3{
+  width: 100%;
+}
+
+#hebergements-marseille{
+  width: 100%;
+}
+
+#most-popular{
+  width: 100%;
+}
+
+.cards{
+  flex-wrap: wrap;
+  width: 100%;
 }
