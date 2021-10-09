@@ -24,42 +24,43 @@
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
-
-        <div class="search-bar">
-          <form action="#" method="POST">
-            <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-            <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="40" size="20" required />
-            <input type="submit" value="Rechercher" />
-          </form>
-          <div class="filters">
-            <h3>Filtres</h3>
-            <div class="filter-container">
-              <div class="search-filter-icon">
-                <i class="fas fa-money-bill-wave"></i>
-              </div>
-              <p class="search-filter-name">Economiques</p>
+        <form class="search-bar" action="#" method="POST">
+          <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+          <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="40" size="20" required />
+          <!-- <input type="submit" value="Rechercher" /> -->
+          <button>
+            <span class="rechercher-button">Rechercher</span>
+            <span class="loupe"><i class="fas fa-search"></i></span>
+          </button>
+        </form>
+        <div class="filters">
+          <h3>Filtres</h3>
+          <div class="filter-container">
+            <div class="search-filter-icon">
+              <i class="fas fa-money-bill-wave"></i>
             </div>
-            <div class="filter-container">
-              <div class="search-filter-icon">
-                <i class="fas fa-child"></i>
-              </div>
-              <p class="search-filter-name">Familial</p>
-            </div>
-            <div class="filter-container">
-              <div class="search-filter-icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              <p class="search-filter-name">Romantique</p>
-            </div>
-            <div class="filter-container">
-              <div class="search-filter-icon">
-                <i class="fas fa-dog"></i>
-              </div>
-              <p class="search-filter-name">Animaux autorisés</p>
-            </div>
+            <p class="search-filter-name">Economiques</p>
           </div>
-          <p class="nblogements"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+          <div class="filter-container">
+            <div class="search-filter-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <p class="search-filter-name">Familial</p>
+          </div>
+          <div class="filter-container">
+            <div class="search-filter-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <p class="search-filter-name">Romantique</p>
+          </div>
+          <div class="filter-container">
+            <div class="search-filter-icon">
+              <i class="fas fa-dog"></i>
+            </div>
+            <p class="search-filter-name">Animaux autorisés</p>
+          </div>
         </div>
+        <p class="nblogements"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
       <div id="hebergements">
         <article id="hebergements-marseille">
