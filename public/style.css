@@ -81,7 +81,7 @@ body {
   margin-bottom: 2%;
   width: 95%;
   margin: auto;
-  margin-bottom: 2% ;
+  margin-bottom: 2%;
 }
 
 .research-title {
@@ -253,7 +253,7 @@ button {
   margin-bottom: 4%;
   width: 95%;
   margin: auto;
-  margin-bottom: 4% ;
+  margin-bottom: 4%;
 }
 
 /*-----------------------------------------
@@ -380,6 +380,8 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 2.5%;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .cards2 a {
@@ -388,23 +390,28 @@ button {
 .card2 {
   display: flex;
   align-items: center;
-  margin: 5% 0 5% 0;
   border: solid #f2f2f2 2.5px;
   border-radius: 2em;
-  box-shadow: 1px 2px 15px rgb(223, 223, 223);
+  box-shadow: 1px 2px 15px rgb(223 223 223);
   background: white;
+  width: 100%;
 }
 
 .card2-img {
-  object-fit: cover;
   width: 40%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card2-img img {
+  object-fit: cover;
+  width: 100%;
   height: 170px;
   border-radius: 2em 0 0 2em;
-  margin-right: 5%;
 }
-
 .card2-container {
-  width: 50%;
+  width: 60%;
 }
 
 .card2-container-h3 {
@@ -603,7 +610,7 @@ button {
 ===================================
 =================================*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   h1,
   h2 {
     font-size: 1.5rem;
@@ -627,7 +634,7 @@ button {
   .sinscrire:nth-child(3) {
     order: 2;
   }
-  #logo-main{
+  #logo-main {
     margin-left: 5%;
   }
   .sinscrire {
@@ -651,12 +658,11 @@ button {
   .nav-hebergements {
     width: 50%;
     padding: 2% 0% 2% 5%;
-}
+  }
 
   .nav-activities {
     width: 50%;
     padding: 2% 5% 2% 0%;
-
   }
 
   .nav a:hover {
@@ -666,12 +672,10 @@ button {
   }
 
   .nav-hebergements:hover {
-
     padding: 2% 0% 2% 5%;
   }
 
   .nav-activities:hover {
-
     padding: 2% 5% 2% 0%;
   }
 
@@ -751,10 +755,10 @@ button {
 
   /*----HEBERGEMENTS-------
   -------------------------*/
-#hebergements{
-  margin: 0;
-  width: 100%;
-}
+  #hebergements {
+    margin: 0;
+    width: 100%;
+  }
   /*-Herbergements-*/
 
   #hebergements-marseille {
@@ -762,28 +766,28 @@ button {
     background: none;
     padding: 0;
     margin: 8% 0;
-
-  }#hebergements-marseille h2{
+  }
+  #hebergements-marseille h2 {
     margin-left: 5%;
     margin-bottom: 5%;
   }
   .cards {
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     padding: 0;
     justify-content: center;
     margin-bottom: 10%;
   }
-.card-img img {
-  height: 125px;
-  width: 340px;
-}
+  .card-img img {
+    height: 125px;
+    width: 340px;
+  }
 
-.card{
-  margin: 1% 0;
-}
-.afficherplus{
-  margin-left: 4%;
-}
+  .card {
+    margin: 1% 0;
+  }
+  .afficherplus {
+    margin-left: 4%;
+  }
   /*--Most Populars--*/
 
   #most-popular {
@@ -792,68 +796,301 @@ button {
     margin: 8% 0%;
     align-items: center;
     border-radius: initial;
-
   }
-  .title-mostpopular{    
+  .title-mostpopular {
     width: 92%;
     margin-bottom: 5%;
-}
-.cards2 {
-  width: 95%;
-  margin: auto;
   }
-.card2{
-  margin: 3% 0;
-}
+  .cards2 {
+    width: 95%;
+    margin: auto;
+  }
+  .card2 {
+    margin: 3% 0;
+  }
 
-/*----Activités----*/
+  /*----Activités----*/
 
-#activities {
-  width: 100%;
-  margin: auto;
-  margin-top: 8%;
-  margin-bottom: 8%;
-}
-#title_actvities {
-  margin-bottom: 5%;
-  margin-left: 5%;
-}
-.activities-cards{
-  width: 91%;
-  margin: auto;
-  justify-content: center;
-}
+  #activities {
+    width: auto;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  #title_actvities {
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+  .activities-cards {
+    width: 91%;
+    margin: auto;
+    justify-content: center;
+  }
 
-#activities img {
-  height: 140px;
-}
+  #activities img {
+    height: 140px;
+  }
 
-.activities-cards1, .activities-cards2{
-  width: auto;
-  justify-content: center;
-  margin: 0;
-} 
+  .activities-cards1,
+  .activities-cards2 {
+    width: auto;
+    justify-content: center;
+    margin: 0;
+  }
 
-.activity-card-big {
-  width: 100%;
-  margin: 5% 0;
-}
-
-.activity-card-S-M{
+  .activity-card-big {
     width: 100%;
-}
-.activity-card-S-M a{
-  margin: 5% 0;
-}
+    margin: 5% 0;
+  }
 
-/*----Footer----*/
+  .activity-card-S-M {
+    width: 100%;
+  }
+  .activity-card-S-M a {
+    margin: 5% 0;
+  }
 
-#footer{
-  flex-wrap: wrap;
-  padding: 5% 0 5% 0;
+  /*----Footer----*/
+
+  #footer {
+    flex-wrap: wrap;
+    padding: 5% 0 5% 0;
+  }
+
+  .footer-div {
+    margin: 4% 0;
+    width: 80%;
+  }
 }
+/*=====================
+=======================
+==========TABLETTE=====
+=======================
+=====================*/
 
-.footer-div{
-  margin: 4% 0;
-  width: 80%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /*-----Header-----*/
+  #header {
+    margin-bottom: 5%;
+  }
+  #logo-main {
+    width: 40%;
+    margin-top: 2%;
+  }
+
+  .nav {
+    width: 40%;
+  }
+  .sinscrire {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%;
+  }
+
+  /*----Research-----
+  ------------------*/
+  #research {
+    width: 97%;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+  .research-title {
+    margin-bottom: 5%;
+  }
+
+  /*--search bar--*/
+
+  .search-bar {
+    width: 60%;
+    margin-bottom: 5%;
+  }
+  .search-bar label {
+    padding: 3% 5%;
+    font-size: 1.1rem;
+  }
+  input[type="text"] {
+    padding: 3% 0% 3% 5%;
+    font-size: 1.1rem;
+  }
+  button {
+    padding: 3% 5%;
+    font-size: 1.1rem;
+  }
+
+  /*--filters--*/
+
+  .filters {
+    width: auto;
+    justify-content: flex-start;
+    padding-left: 1%;
+  }
+
+  .filters h3 {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .filter-container {
+    margin: 0% 2% 1% 0;
+    padding-right: 3%;
+  }
+  .search-filter-name {
+    font-size: 1rem;
+    margin-right: -7%;
+  }
+  .search-filter-icon i {
+    font-size: 1.1rem;
+    width: 2.9rem;
+    height: 2.9rem;
+  } /*----HEBERGEMENTS-------
+  -------------------------*/
+  #hebergements {
+    margin: 0;
+    width: 100%;
+  }
+  /*-Herbergements-*/
+
+  #hebergements-marseille {
+    width: 100%;
+    background: none;
+    padding: 5% 0;
+    margin: 2% 0;
+  }
+  #hebergements-marseille h2 {
+    margin-left: 4%;
+    margin-bottom: 2%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    width: 98%;
+    padding: 0;
+    justify-content: space-around;
+    margin-bottom: 5%;
+  }
+  .card-img img {
+    height: 125px;
+    width: 340px;
+  }
+
+  .card {
+    margin: 1% 0;
+  }
+  .afficherplus {
+    margin-left: 4%;
+  }
+  /*--Most Populars--*/
+
+  #most-popular {
+    width: 100%;
+    padding: 5% 0;
+    margin: 2% 0%;
+    border-radius: initial;
+  }
+  .title-mostpopular {
+    margin: 0% 4%;
+    margin-bottom: 3%;
+  }
+  .cards2 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .card2 {
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .cards2 a {
+    width: 30%;
+  }
+
+  .card2-img {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+  }
+  .card2-img img {
+    object-fit: cover;
+    height: 150px;
+    border-radius: 2em 2em 0 0;
+    margin: 0;
+  }
+  .card2-container {
+    width: 100%;
+    padding: 4%;
+  }
+  .card2-container-h3 {
+    width: 100%;
+  }
+  .card2-container p {
+    width: 100%;
+  }
+
+  /*----Activités----*/
+
+  #activities {
+    width: 100%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  #title_actvities {
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+  .activities-cards {
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+  }
+
+  #activities img {
+  }
+
+  .activities-cards1,
+  .activities-cards2 {
+    width: 100%;
+    margin: 3% 0;
+    height: 40%;
+  }
+  .activities-cards2 {
+    flex-direction: row-reverse;
+
+  }
+  .activities-cards {    height: 100%;
+  }
+
+  .activity-card-big {
+    height: 80%;
+  }
+  .activity-card-big-container {
+    height: 100%;
+  }
+  .activity-card-big-container img {
+    height: 85%;
+  }
+  .activity-card-S-M {
+    height: 80%;
+  }
+  .activity-card-small-container {height: 60%;
+  }
+  .activity-card-medium-container {height: 60%;
+  }
+  }
+  
+  .activity-card-small-container img {height: 85%;
+  }
+  .activity-card-medium-container img{height: 85%;
+  }
 }
